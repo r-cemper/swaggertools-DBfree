@@ -55,4 +55,13 @@ http://localhost:42773/csp/user/ZX.nacl.cls
 ```
 ```
 ### How to use it
-This presents  
+The Demo starts from Docker shell  
+You enter server, port, namespace, user, password  
+Then the Python module connects, collects data and prepares the image.   
+```
+docker-compose exec iris bash
+
+```
+
+
+   

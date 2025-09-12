@@ -1,7 +1,13 @@
 # Snapshot of free disk space
-The OEX package just uses a modest IRIS instance in Docker     
-It merges IPM package of ??????? with some demo data    
-It is built using the small [Mini-Docker-Template](https://github.com/rcemper/mini-docker)    
+It's an example for the External Languages Contest 2025   
+### The idea
+An independent external Python module connects to IRIS using  
+IRIS Native API for Python collects disk data and transforms  
+the result in a barchart and a table with numeric details.  
+Data collection happens inside IRIS, graphics are prepared in Python   
+the final result is embedded in a CSP page.  
+
+
 ### Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 ### Installation

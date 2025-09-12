@@ -2,6 +2,7 @@ import irisnative as iris
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys
+from datetime import datetime
 
 # show local variables
 def zw():
@@ -47,13 +48,17 @@ mba=[float(x) for x in mbavail]
 przavail=db.get("%zrcc",4).split()
 prz=[int(x) for x in przavail]
 tab=pd.DataFrame({"DataBaseName": dbname, "MBtotal":mbs,"MBfree":mba,"%free":prz},index=dbname)
+tim=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 tit='DB Free on Server '+node+'/'+inst
+print("Collected Data Values at "+tim)
 print(tit)
 print(tab.to_string(index=False))
 #
 sto = sys.stdout
 sys.stdout = open('/ext/tab.txt', 'w')
+print("Collected Data Values at "+tim)
 print(tit)
+print("at "+tim)
 print(tab.to_string(index=False))
 sys.stdout = sto
 # zw()

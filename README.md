@@ -3,11 +3,28 @@ It's an example for the External Languages Contest 2025
 ### The idea
 An independent external Python module connects to IRIS using  
 IRIS Native API for Python collects disk data and transforms  
-the result in a barchart and a table with numeric details.  
+the findings in a barchart and a table with numeric details.  
 Data collection happens inside IRIS, graphics are prepared in Python   
-the final result is embedded in a CSP page.  
-
-
+The final results are embedded in a CSP page.  
+<img src=https://github.com/r-cemper/DKfree/blob/master/tab.jpg>    
+#### DB Free on Server AA7A095DE9C1/IRIS  
+````
+  DataBaseName  MBtotal  MBfree  %free    
+       IRISSYS       70    3.20      5   
+      HSCUSTOM       21    8.50     40  
+        ENSLIB      217   16.00      7   
+         HSLIB     1362    0.77      0   
+         HSSYS       21    8.40     40   
+HSSYSLOCALTEMP        1    0.33     33   
+     IRISAUDIT       11    6.30     57  
+       IRISLIB      368    0.59      0  
+ IRISLOCALDATA       11    9.40     85   
+   IRISMETRICS        1    0.29     29  
+      IRISTEMP       11    9.00     82   
+          USER       11    9.90     90   
+           IPM       14    2.50     18   
+````
+           
 ### Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 ### Installation
@@ -31,6 +48,11 @@ USER>
 To access IRIS System Management Portal
 ```
 http://localhost:42773/csp/sys/UtilHome.csp
+```
+To consume the Graphics
+```
+http://localhost:42773/csp/user/ZX.nacl.cls
+```
 ```
 ### How to use it
 This presents  

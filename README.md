@@ -51,7 +51,7 @@ irisowner@6597ac7a2c23:/opt/irisapp$ python3 /ext/dkfree.py
 ECHO := Connection Up
 Connected to Instance IRIS on Server 6597AC7A2C23
 
-Collected Data Values  
+Collected Data Values at 2025-09-12 20:07:55
 DB Free on Server 6597AC7A2C23/IRIS
   DataBaseName  MBtotal  MBfree  %free
        IRISSYS       70    3.20      5

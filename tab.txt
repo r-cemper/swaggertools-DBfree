@@ -1,0 +1,15 @@
+DB Free on Server AA7A095DE9C1/IRIS
+  DataBaseName  MBtotal  MBfree  %free
+       IRISSYS       70    3.20      5
+      HSCUSTOM       21    8.50     40
+        ENSLIB      217   16.00      7
+         HSLIB     1362    0.77      0
+         HSSYS       21    8.40     40
+HSSYSLOCALTEMP        1    0.33     33
+     IRISAUDIT       11    6.30     57
+       IRISLIB      368    0.59      0
+ IRISLOCALDATA       11    9.40     85
+   IRISMETRICS        1    0.29     29
+      IRISTEMP       11    9.00     82
+          USER       11    9.90     90
+           IPM       14    2.50     18

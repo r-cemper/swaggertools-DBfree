@@ -7,25 +7,24 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ### Installation
 Clone/git pull the repo into any local directory
 ```
-$ git clone https://github.com/rcemper/?????????.git
+git clone https://github.com/r-cemper/DKfree.git
 ```
 To build and start the container run:
 ```
-$ docker compose up -d && docker compose logs -f
+docker compose up -d && docker compose logs -f
+```
+To access docker console terminal
+```
+docker-compose exec iris bash
 ```
 To open IRIS Terminal do:
 ```
-$ docker-compose exec iris iris session iris
+docker-compose exec iris iris session iris
 USER>
-```
-or using **iterm**
-```
-http://localhost:42773/iterm/
 ```
 To access IRIS System Management Portal
 ```
 http://localhost:42773/csp/sys/UtilHome.csp
 ```
 ### How to use it
-This presents OEX package [???????](https://openexchange.intersystems.com/package/?????) using the actual IPM module    
-All user documentation is found there in the [original repo](https://github.com/*****/???????/blob/master/docs/README.md)  
+This presents  

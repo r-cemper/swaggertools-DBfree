@@ -1,4 +1,4 @@
-# Docker_Demo: ??????????
+# Snapshot of free diak space
 The OEX package just uses a modest IRIS instance in Docker     
 It merges IPM package of ??????? with some demo data    
 It is built using the small [Mini-Docker-Template](https://github.com/rcemper/mini-docker)    

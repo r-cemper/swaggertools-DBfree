@@ -1,4 +1,8 @@
 import irisnative as iris
+import pandas as pd
+import matplotlib.pyplot as plt
+import sys
+from datetime import datetime
 
 # show local variables
 def zw():
@@ -42,15 +46,30 @@ mbs=[int(x) for x in mbsize]
 mbavail=db.get("%zrcc",3).split()
 mba=[float(x) for x in mbavail]
 przavail=db.get("%zrcc",4).split()
-prz=[int(x) for x in przval]
-tab=pd.DataFrame({"DBname": dbname, "MBsize":mbs,"MBfree":mba,"%free":prz})
+prz=[int(x) for x in przavail]
+tab=pd.DataFrame({"DataBaseName": dbname, "MBtotal":mbs,"MBfree":mba,"%free":prz},index=dbname)
+tim=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+tit='DB Free on Server '+node+'/'+inst
+print("Collected Data Values at "+tim)
+print(tit)
 print(tab.to_string(index=False))
-zw()
-
-
-
-# demo selection
-
+#
+sto = sys.stdout
+sys.stdout = open('/ext/tab.txt', 'w')
+print("Collected Data Values at "+tim)
+print(tit)
+print("at "+tim)
+print(tab.to_string(index=False))
+sys.stdout = sto
+# zw()
+tit='DB Free on Server '+node+'/'+inst
+img=tab.plot.barh(log=True,align='edge',title=tit)
+dir='/ext/tab.jpg'
+plt.savefig(dir)
+db.set(dir,"%zrcc")
+print("Image stored here: "+dir)
+print("Table stored here: /ext/tab.txt")
+print("view results here: http://localhost:42773/csp/user/ZX.nacl.cls") 
 print("\nThank you for trying the demo\n")
 db.close()
 conn.close()

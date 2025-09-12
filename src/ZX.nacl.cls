@@ -50,10 +50,9 @@ ClassMethod OnPage() As %Status [ ServerOnly = 1 ]
 
 <body>
 <table><tr><td>
-<img src="tab.jpg">
+<img src="tab.jpg?#($h)#">
 </td><td>
-Measured Data Values<br><br>
-<iframe src="tab.txt" frameborder="1" height=350 align='top'  width=300 ></iframe>
+<iframe src="tab.txt?#($h)#" frameborder="1" height=350 align='top'  width=400 ></iframe>
 </td></tr></table>
 </body>
 </html>

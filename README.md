@@ -6,7 +6,7 @@ IRIS Native API for Python collects disk data and transforms
 the findings in a barchart and a table with numeric details.  
 Data collection happens inside IRIS, graphics are prepared in Python   
 The final results are embedded in a CSP page.  
-<img src="https://github.com/r-cemper/DKfree/blob/master/dkfree.jpg">    
+<img src="https://github.com/r-cemper/DKfree/blob/master/dkfree1.jpg">    
 
 ### Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.

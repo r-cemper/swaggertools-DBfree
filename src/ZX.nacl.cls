@@ -26,7 +26,7 @@ ClassMethod sql() As %String
 
 ClassMethod upd()
 {
-	set jpg=$g(^%zrcc)
+	set jpg=$g(^%zrcc,"/ext/tab.jpg")
 	set txt=$p(jpg,".")_".txt"
 	if jpg="" quit
 	set csp=$system.Util.ManagerDirectory()
@@ -61,3 +61,4 @@ ClassMethod OnPage() As %Status [ ServerOnly = 1 ]
 }
 
 }
+

@@ -39,10 +39,16 @@ http://localhost:42773/csp/user/ZX.nacl.cls
 ### How to use it
 The Demo starts from Docker shell  
 You enter server, port, namespace, user, password  
-Then the Python module connects, collects data and prepares the image.  
+Then the Python module connects, collects data and prepares the image.
+##### slow start   
 ```
 C:\GitHub\_my\_dkfree>docker-compose exec iris bash
 irisowner@6597ac7a2c23:/opt/irisapp$ python3 /ext/dkfree.py
+```
+##### quick start  
+```
+C:\GitHub\_my\_dkfree>docker-compose exec iris python3 /ext/dkfree.py
+
 >>> serverIP [127.0.0.1]:
 >>> serverPORT [1972]:
 >>> namespace [USER]:
@@ -74,7 +80,8 @@ view results here: http://localhost:42773/csp/user/ZX.nacl.cls
 Thank you for trying the demo
 
 irisowner@6597ac7a2c23:/opt/irisapp$
-```   
+```
+
 [Video](https://youtu.be/IZtPmMc-yiI)
 
    

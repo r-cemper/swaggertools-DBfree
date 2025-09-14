@@ -1,4 +1,4 @@
-Class ZX.nacl Extends %CSP.Page
+tClass ZX.nacl Extends %CSP.Page
 {
 
 ClassMethod echo(xx) As %String
@@ -18,7 +18,7 @@ ClassMethod sql() As %String
 	)
 	kill ^%zrcc
 	for j=1:1:4 { set r=""
-		for i=1:1:$l(%rcc,",") s r=r_$s(i>1:" ",1:"")_$p($p(%rcc,",",i),"*",j)
+		for i=1:1:$l(%rcc,",") set r=r_$s(i>1:" ",1:"")_$p($p(%rcc,",",i),"*",j)
 		set ^%zrcc(j)=r
 	}
 	quit %rcc
@@ -28,7 +28,6 @@ ClassMethod upd()
 {
 	set jpg=$g(^%zrcc,"/ext/tab.jpg")
 	set txt=$p(jpg,".")_".txt"
-	if jpg="" quit
 	set csp=$system.Util.ManagerDirectory()
 	set sep=$s(csp["/":"/",1:"\")
 	set $p(csp,sep,*-1)="csp"
@@ -61,4 +60,5 @@ ClassMethod OnPage() As %Status [ ServerOnly = 1 ]
 }
 
 }
+
 

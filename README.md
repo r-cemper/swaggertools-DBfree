@@ -78,8 +78,6 @@ Table stored here: /ext/tab.txt
 view results here: http://localhost:42773/csp/user/ZX.nacl.cls
 
 Thank you for trying the demo
-
-irisowner@6597ac7a2c23:/opt/irisapp$
 ```
 
 [Video](https://youtu.be/IZtPmMc-yiI)

@@ -49,8 +49,8 @@ irisowner@6597ac7a2c23:/opt/irisapp$ python3 /ext/dkfree.py
 ```
 C:\GitHub\_my\_dkfree>docker-compose exec iris python3 /ext/dkfree.py   
 ```
-<img src="https://github.com/r-cemper/DKfree/blob/master/txt.jpg"></img> 
-##### more
+<img src="https://github.com/r-cemper/DKfree/blob/master/txt.jpg"></img>    
+ 
 [Video](https://youtu.be/IZtPmMc-yiI)  
 
 [Article 1](https://community.intersystems.com/post/snapshot-free-disk-space)

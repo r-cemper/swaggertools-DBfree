@@ -80,6 +80,10 @@ view results here: http://localhost:42773/csp/user/ZX.nacl.cls
 Thank you for trying the demo
 ```
 
-[Video](https://youtu.be/IZtPmMc-yiI)
+[Video](https://youtu.be/IZtPmMc-yiI)  
+
+[Article 1](https://community.intersystems.com/post/snapshot-free-disk-space)
+
+[Article 2](https://community.intersystems.com/post/snapshot-db-free-strategies)
 
    

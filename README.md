@@ -32,6 +32,4 @@ In your browser simply call
 ```
 http://localhost:42773/csp/user/ZX.dbdash.cls
 ```
-<img src="https://github.com/r-cemper/DKfree/blob/master/txt.jpg"></img>    
- 
 [Ideas Portal](https://ideas.intersystems.com/ideas/DPI-I-799)   

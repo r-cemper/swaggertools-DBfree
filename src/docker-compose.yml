@@ -1,9 +1,0 @@
-services:
-  iris:
-    image: intersystemsdc/irishealth-community
-    command: -a /ext/ascript.sh
-    ports: 
-      - 41773:1972
-      - 42773:52773
-    volumes:
-      - ./:/ext

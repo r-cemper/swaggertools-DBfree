@@ -41,7 +41,7 @@ ClassMethod Load()
 	from %SYS.SYS.Database_FreeSpace()
 	)
 #; keep time + date	
-	set ^mtemp.ZXD("~"_$ZT($h))=$lfs($ZD($h,3),"-") 
+	set ^mtemp.ZXD=$ZDT($h,3)
 	quit
 }
 
@@ -67,3 +67,4 @@ Storage Default
 }
 
 }
+

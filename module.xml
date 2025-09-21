@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="snap-dkfree.ZPM">
+  <Document name="db-dashboard.ZPM">
     <Module>
-      <Name>snap-dkfree</Name>
+      <Name>db-dashboard</Name>
       <Version>0.0.1</Version>
-      <Description>slave to Scan Disk free space</Description>
+      <Description>Disk free space as Daschboard</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="ZX.nacl.CLS"/>
+      <Resource Name="%ZX.dbfree.CLS"/>
+      <Resource Name="ZX.PKG"/>
+	  
     </Module>
   </Document>
 </Export>

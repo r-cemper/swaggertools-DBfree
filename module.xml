@@ -7,7 +7,6 @@
       <Description>Disk free space as Daschboard</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="%ZX.dbfree.CLS"/>
       <Resource Name="ZX.PKG"/>
 	  
     </Module>

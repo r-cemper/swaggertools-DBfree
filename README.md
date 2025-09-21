@@ -1,11 +1,11 @@
-# Snapshot of free disk space
-It's an example for the External Languages Contest 2025   
-### The idea
-An independent external Python module connects to IRIS using  
-IRIS Native API for Python collects disk data and transforms  
-the findings in a barchart and a table with numeric details.  
-Data collection happens inside IRIS, graphics are prepared in Python   
-The final results are embedded in a CSP page.  
+# Snapshot of free disk space   
+It's a follow on to my previous package  [DBfree](https://github.com/r-cemper/DBfree)   
+### The idea   
+As DeepSee in IRIS can display tables and graphics in a dashboard, I tried to fill   
+in the actual DB parameters and to visualize them. 
+Short summary:   
+It is possible and an intersting exercise to misuse DepSee as graphic viewer.
+As in the previous package, all is running from a CSP page 
 <img src="https://github.com/r-cemper/DKfree/blob/master/dkfree1.jpg">    
 
 ### Prerequisites

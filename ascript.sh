@@ -1,5 +1,3 @@
-pip install pandas
-pip install matplotlib
 cd /ext
 iris view
 iris session iris < iris.script

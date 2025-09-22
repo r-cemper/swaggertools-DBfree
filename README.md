@@ -31,6 +31,8 @@ http://localhost:42773/csp/sys/UtilHome.csp
 ### How to use it
 In your browser simply call   
 
-http://localhost:42773/csp/user/ZX.dbdash.cls
+http://localhost:42773/csp/user/ZX.dbdash.cls    
+
+[Article](https://community.intersystems.com/post/dashboard-database-free-space)    
 
 [Ideas Portal](https://ideas.intersystems.com/ideas/DPI-I-799)   

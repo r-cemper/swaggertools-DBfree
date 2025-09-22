@@ -7,7 +7,7 @@ _Short summary:_
 It is possible and an interesting exercise to misuse DepSee as a graphic viewer.  
 As in the previous package, all is running from a CSP page.   
 And it is all written in pure InterSystems ObjectScript       
-<img src="https://github.com/r-cemper/DBdashboard/blob/master/final.jpg" width=600>      
+<img src="https://github.com/r-cemper/DBdashboard/blob/master/final.jpg" width=600>  
 ### Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 ### Installation

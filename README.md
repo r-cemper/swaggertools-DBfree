@@ -1,4 +1,4 @@
-# Dashboard of free disk space   
+# Dashboard of free database space   
 It's a follow-up to my previous package  [DBfree](https://github.com/r-cemper/DBfree), but not part of a contest    
 ### The idea   
 As DeepSee in IRIS can display tables and graphics in a dashboard, I tried to fill   

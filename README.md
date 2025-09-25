@@ -31,8 +31,17 @@ http://localhost:42773/csp/sys/UtilHome.csp
 ### How to use it
 In your browser simply call   
 
-http://localhost:42773/csp/user/ZX.dbdash.cls    
+http://localhost:42773/csp/user/ZX.dbdash.cls  
 
+### Release notes version 1.0.0   
+Based on the very positive feedback I have added a new functionality.   
+It is now possible to take also a snapshot from a remote system.   
+The only requirement is to append an URL parameter formatted:   
+#### ?SERVER=IP-Address[:SuperServerPort[:Username[:Password]]]
+Example for defaults: _port=1972 user=\_SYSTEM pw=SYS_    
+```
+http://localhost:42773/csp/user/ZX.dbdash.cls?SERVER=192.168.0.11:11972:SuperUser:SYS
+```
 [Article](https://community.intersystems.com/post/dashboard-database-free-space)    
 
 [Ideas Portal](https://ideas.intersystems.com/ideas/DPI-I-799)   

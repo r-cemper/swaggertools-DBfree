@@ -3,7 +3,7 @@ Class ZX.dbdash Extends %CSP.Page [ Not ProcedureBlock ]
 {
 ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
 {
-	set SERVER=$lfs($get(%request.Data("SERVER",1)),";")
+	set SERVER=$lfs($get(%request.Data("SERVER",1)),":")
 	if $ll(SERVER) do ..Remote(SERVER)
 	else  do ##class(%ZX.dbfree).Load()
 	set sc=##class(%DeepSee.Utils).%BuildCube("ZX.DBdata",,0)
@@ -50,3 +50,4 @@ ClassMethod Remote(SERVER As %List)
 	quit
 }
 }
+

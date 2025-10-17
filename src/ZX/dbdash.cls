@@ -6,9 +6,9 @@ ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
 	set SERVER=$lfs($get(%request.Data("SERVER",1)),":")
 	if $ll(SERVER) do ..Remote(SERVER)
 	else  do ##class(%ZX.dbfree).Load()
-	set sc=##class(%DeepSee.Utils).%BuildCube("ZX.DBdata",,0)
-	set sc=##class(%DeepSee.Utils).%BuildCube("ZX.DBlog",,0)
-	Set %response.ServerSideRedirect="/csp/user/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=ZXfree.dashboard"
+#;	set sc=##class(%DeepSee.Utils).%BuildCube("ZX.DBdata",,0)
+#;	set sc=##class(%DeepSee.Utils).%BuildCube("ZX.DBlog",,0)
+#;	Set %response.ServerSideRedirect="/csp/user/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=ZXfree.dashboard"
 	quit $$$OK
 }
 ClassMethod OnPage() As %Status
@@ -50,4 +50,5 @@ ClassMethod Remote(SERVER As %List)
 	quit
 }
 }
+
 

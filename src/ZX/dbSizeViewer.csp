@@ -1,4 +1,4 @@
-Class ZX.UI.DBSizeViewer Extends %CSP.Page
+Class ZX.dbSizeViewer Extends %CSP.Page
 {
 
 Parameter Title As STRING [ Final ] = "DB Free size";
@@ -109,7 +109,7 @@ ClassMethod RenderChart() As %Status
                     </button>
                 </div>
             </div>
-            <p>Date: 2025-10-17 13:23:48</p>
+            <p>Date: #($ZDT($h,3))#</p>
             <div class="chart-wrapper">
                 <canvas id="globalsChart"></canvas>
             </div>
@@ -121,7 +121,7 @@ ClassMethod RenderChart() As %Status
                 <h2 class="table-title">All Databases</h2>
                 <div class="search-container">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchBox" class="search-box" placeholder="Search globals by name...">
+                    <input type="text" id="searchBox" class="search-box" placeholder="Search DB by name...">
                 </div>
             </div>
 
@@ -675,6 +675,49 @@ ClassMethod Scripts()
     </script>
 	>
 	Q 1
+}
+
+ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
+{
+	set SERVER=$lfs($get(%request.Data("SERVER",1)),";")
+	if $ll(SERVER) do ..Remote(SERVER)
+	else  do ##class(%ZX.dbfree).Load()
+	quit $$$OK
+}
+
+ClassMethod Remote(SERVER As %List)
+{
+	set ip=$lg(SERVER,1,"127.0.0.1")
+	set port=$lg(SERVER,2,1972)
+	set ns="%SYS"
+	set user=$lg(SERVER,3,"_SYSTEM")
+	set pw=$lg(SERVER,4,"SYS")
+	
+  try {
+    set conn=##class(%Net.DB.DataSource).CreateConnection(ip
+                           ,port
+						   ,ns
+						   ,user
+						   ,pw)
+    set iris=conn.CreateIris()
+    }
+  catch { zw  b  quit }  ;; do some error handling
+ #; create a local copy before a complete replacement 
+ 	do iris.ClassMethodVoid("%ZX.dbfree","Load")  
+	kill ^||ZX
+	set ^||ZX=iris.Get("^mtemp.ZXD")
+	set db=""
+	For  {
+		set ans=iris.GetNext(1,1,0,"^mtemp.ZXD",db)
+		set db=$lg(ans,1)
+		set val=$lg(ans,2)
+		if db="" quit
+		set ^||ZX(db)=val
+		}
+	do conn.Close()
+	kill ^mtemp.ZXD
+	merge ^mtemp.ZXD=^||ZX
+	quit
 }
 
 }

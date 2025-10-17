@@ -1,15 +1,15 @@
 # Free database space by SwaggerTools  
 It's a follow-up to my previous package  [DBdashboard](https://github.com/r-cemper/DBdashboard)    
-My special big THANKS go to #Ashok Kumar T# to provde me with the graphic prsentation.   
-The graphics of his packags [GBLSizeMonitor](https://openexchange.intersystems.com/package/GBLSizeMonitor) was exactily what I was looinkg for.   
+My special big THANKS go to #Ashok Kumar T# for providing me with the graphic presentation.   
+The graphics of his package [GBLSizeMonitor](https://openexchange.intersystems.com/package/GBLSizeMonitor) was exactily what I was looinkg for.   
 
 ### The idea   
-Visualizatin is one of the kee facturs for fast recognitin of numeric facts.   
-I collect the actual DB parameters and show them numeric and visualized.    
+Visualization is one of the key factors for fast recognition of numeric facts.   
+I collect the actual DB parameters and show them numerically and visually.    
 _Short summary:_    
 As in the previous package, all is running from a CSP page.   
 And it is all written in pure InterSystems ObjectScript, JavaScript, HTML       
-<img src="https://github.com/r-cemper/DBdashboard/blob/master/final.jpg" width=600>  
+<img src="https://github.com/r-cemper/swaggertools-DBfree/blob/master/final.jpg" width=600>  
 ### Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 ### Installation

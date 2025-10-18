@@ -42,7 +42,7 @@ Example for defaults: _port=1972 user=\_SYSTEM pw=SYS_
 Missing URL paramter uses the local system.    
 Example:
 ```
-http://localhost:42773/csp/user/ZX..dbSizeViewer?SERVER=192.168.0.11:11972:SuperUser:SYS
+http://localhost:42773/csp/user/ZX.dbSizeViewer?SERVER=192.168.0.11:11972:SuperUser:SYS
 ```
 [Article](https://community.intersystems.com/post/dashboard-database-free-space)    
 

@@ -601,15 +601,12 @@ ClassMethod Remote(SERVER As %List)
 	set ns="%SYS"
 	set user=$lg(SERVER,3,"_SYSTEM")
 	set pw=$lg(SERVER,4,"SYS")
-  try {
     set conn=##class(%Net.DB.DataSource).CreateConnection(ip
                            ,port
 						   ,ns
 						   ,user
 						   ,pw)
     set iris=conn.CreateIris()
-    }
-  catch { do LOG^%ETN quit }  ;; do some error handling
  #; create a local copy before a complete replacement 
  	do iris.ClassMethodVoid("%ZX.dbfree","Load")  
 	kill ^||ZX

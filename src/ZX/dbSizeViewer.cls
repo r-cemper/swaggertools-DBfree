@@ -589,7 +589,7 @@ ClassMethod Scripts()
 }
 ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
 {
-	set SERVER=$lfs($get(%request.Data("SERVER",1)),";")
+	set SERVER=$lfs($get(%request.Data("SERVER",1)),":")
 	if $ll(SERVER) do ..Remote(SERVER)
 	else  do ##class(%ZX.dbfree).Load()
 	quit $$$OK
@@ -609,7 +609,7 @@ ClassMethod Remote(SERVER As %List)
 						   ,pw)
     set iris=conn.CreateIris()
     }
-  catch { do ERR^%ETN quit }  ;; do some error handling
+  catch { do LOG^%ETN quit }  ;; do some error handling
  #; create a local copy before a complete replacement 
  	do iris.ClassMethodVoid("%ZX.dbfree","Load")  
 	kill ^||ZX

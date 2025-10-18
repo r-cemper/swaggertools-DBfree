@@ -44,6 +44,6 @@ Example:
 ```
 http://localhost:42773/csp/user/ZX.dbSizeViewer.cls?SERVER=192.168.0.11:11972:SuperUser:SYS
 ```
-[Article](https://community.intersystems.com/post/dashboard-database-free-space)    
+[Article](https://community.intersystems.com/post/free-database-space-swaggertools)    
 
 [Ideas Portal](https://ideas.intersystems.com/ideas/DPI-I-799)   

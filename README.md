@@ -1,6 +1,6 @@
 # Free database space by SwaggerTools  
 It's a follow-up to my previous package  [DBdashboard](https://github.com/r-cemper/DBdashboard)    
-My special big THANKS go to __Ashok Kumar T__ for providing me with the graphic presentation.   
+Big THANKS to __Ashok Kumar T__ for providing the graphic presentation.   
 The graphics of his package [GBLSizeMonitor](https://openexchange.intersystems.com/package/GBLSizeMonitor) were exactly what I was looking for.   
 
 ### The idea   

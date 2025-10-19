@@ -4,7 +4,7 @@
     <Module>
       <Name>db-swagger</Name>
       <Version>1.0.0</Version>
-      <Description>Disk free space as Dashboard</Description>
+      <Description>View DB free space wirh Swagger</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="ZX.PKG"/>

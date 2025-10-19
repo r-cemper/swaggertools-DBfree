@@ -39,7 +39,7 @@ As in the previois packages it is now possible to take also a snapshot from
 a remote system. The only requirement is to append an URL parameter formatted:   
 #### ?SERVER=IP-Address[:SuperServerPort[:Username[:Password]]]
 Example for defaults: _port=1972 user=\_SYSTEM pw=SYS_
-Missing URL paramter uses the local system.    
+Missing URL paramter uses the local system.   
 Example:
 ```
 http://localhost:42773/csp/user/ZX.dbSizeViewer.cls?SERVER=192.168.0.11:11972:SuperUser:SYS

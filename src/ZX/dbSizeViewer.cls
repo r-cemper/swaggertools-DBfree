@@ -97,7 +97,7 @@ ClassMethod RenderChart() As %Status
                     </button>
                 </div>
             </div>
-            <p>Date: #($ZDT($h,3))#</p>
+			<p>Date: <b>#($ZDT($h,3))#</b>&nbsp;&nbsp;&nbsp;Instance: <b>#(%instance)#</b></p>
             <div class="chart-wrapper">
                 <canvas id="globalsChart"></canvas>
             </div>
@@ -590,6 +590,7 @@ ClassMethod Scripts()
 ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
 {
 	set SERVER=$lfs($get(%request.Data("SERVER",1)),":")
+	set %instance=##class(%SYS.System).GetInstanceName()_"</b> on <b>localhost"
 	if $ll(SERVER) do ..Remote(SERVER)
 	else  do ##class(%ZX.dbfree).Load()
 	quit $$$OK
@@ -619,6 +620,7 @@ ClassMethod Remote(SERVER As %List)
 		if db="" quit
 		set ^||ZX(db)=val
 		}
+	set %instance=iris.ClassMethodValue("%SYS.System","GetInstanceName")_"</b> on <b>"_ip
 	do conn.Close()
 	kill ^mtemp.ZXD
 	merge ^mtemp.ZXD=^||ZX

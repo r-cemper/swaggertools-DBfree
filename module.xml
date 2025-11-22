@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="db-swagger.ZPM">
+  <Document name="dbwatch.ZPM">
     <Module>
-      <Name>db-swagger</Name>
-      <Version>1.0.1</Version>
-      <Description>View DB free space with Swagger</Description>
+      <Name>dbwatch</Name>
+      <Version>0.0.1</Version>
+      <Description>Visualize DB size</Description>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="ZX.PKG"/>
